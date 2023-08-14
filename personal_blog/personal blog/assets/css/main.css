@@ -1,0 +1,56 @@
+@import url('./navbar.css');
+@import url('./card-container.css');
+@import url('./footer.css');
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 80vh 50px;
+    grid-template-areas: 
+        'navbar'
+        'main'
+        'footer';
+    
+}
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between; 
+    background-color: lightcyan;    
+}
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+    .social-link {
+        display: none;
+    }
+    .app-link {
+        justify-content: start;
+    }
+    .card {
+        padding-top: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .container {
+        grid-template-rows: 50px 1fr 50px;
+
+    }
+    .card img {
+        width: 200px;
+        
+    }
+}

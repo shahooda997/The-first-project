@@ -1,0 +1,67 @@
+@import url('./navbar.css');
+@import url('./author-info.css');
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-template-rows: 50px 80vh 50px;
+    grid-template-areas: 
+        'navbar navbar'
+        'sidebar post-area'
+        'footer footer';
+}
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between; 
+    background-color: lightcyan;
+}
+.sidebar {
+    grid-area: sidebar;
+
+}
+.post-area {
+    padding-top: 40px;
+    grid-area: post-area;
+    margin: 40px;
+
+}
+.header {
+    width: 100%;
+
+}
+.post-title {
+    text-transform: capitalize;
+    padding-top: 5px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: skyblue;
+    margin-top: 1px;
+}
+.pography {
+   text-indent: 10px;
+   letter-spacing: 3px;
+   color: gray;
+   font-family: Arial;
+   text-align: justify;
+   line-height: 30px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .social-link {
+        display: none;
+    }
+    .app-link {
+        justify-content: start;
+    }
+    .container {
+        grid-template-areas:
+         'navbar'
+         'sidebar'
+        'post-area'
+        'footer';
+        grid-template-rows: 50px 400px 1fr 60px;
+    
+    }
+}

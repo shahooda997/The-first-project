@@ -1,0 +1,39 @@
+.author-info {
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+
+}
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+
+}
+.name {
+  text-transform: capitalize;
+  padding-top: 5px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: rgb(119, 8, 45);
+  margin-top: 1px;
+}
+.title {
+  text-transform: capitalize;
+  padding-top: 3px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: grey;
+  margin-top: 1px;
+
+}
+.title span {
+ color: purple;
+}
+.bio {
+  border: none;
+  pointer-events: none;
+  white-space: pre-wrap;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}

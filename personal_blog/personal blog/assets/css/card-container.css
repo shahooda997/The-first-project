@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 40px;
+
+}
+.card {
+    width: 400px;
+}
+.card img {
+    width: 400px;
+    
+}
